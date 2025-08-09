@@ -1,107 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- Icons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-
-    <title>Frontend Mentor | Huddle landing page</title>
-
-    <!-- Font Setup -->
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              poppins: ["Poppins", "sans-serif"],
-              opensans: ['"Open Sans"', "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-
-  <body
-    class="bg-[url('images/bg-mobile.svg')] md:bg-[url('images/bg-desktop.svg')] bg-no-repeat bg-cover bg-[#674BB1] px-6 py-10 md:px-20"
-  >
-    <!-- Navbar -->
-    <nav class="w-full mb-10">
-      <div class="w-1/2 md:w-[15%]">
-        <img src="images/logo.svg" alt="Huddle logo" class="w-full" />
-      </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="flex flex-col md:flex-row justify-between items-center gap-8">
-      <!-- Left: Image -->
-      <div class="w-full md:w-full sm:w-full max-w-[600px]">
-        <img
-          src="images/illustration-mockups.svg"
-          alt="Illustration mockups"
-          class="w-full"
-          loading="lazy"
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
         />
-      </div>
 
-      <!-- Right: Text -->
-      <div
-        class="w-full md:w-full sm:w-full max-w-[600px] text-white flex flex-col align-start justify-center text-center md:text-left"
-      >
-        <h1
-          class="text-3xl md:text-4xl font-semibold mb-4 font-poppins leading-snug"
-        >
-          Build The Community <br />Your Fans Will Love
-        </h1>
-        <p class="text-base font-normal mb-6 font-opensans leading-relaxed">
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <button
-          class="bg-white text-[#674BB1] px-10 py-2 rounded-full font-semibold hover:bg-[#E980E7] hover:text-white transition duration-200 whitespace-nowrap w-[70%] md:w-auto mx-auto md:mx-0 self-center md:self-start"
-        >
-          Register
-        </button>
-      </div>
-    </main>
+        <!-- Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- Social Icons -->
-    <div class="flex justify-center md:justify-end gap-4 mt-8 mr-0 md:mr-10">
-      <i
-        class="ri-facebook-fill text-white text-2xl hover:text-[#E980E7]"
-        aria-label="Facebook"
-      ></i>
-      <i
-        class="ri-twitter-fill text-white text-2xl hover:text-[#E980E7]"
-        aria-label="Twitter"
-      ></i>
-      <i
-        class="ri-instagram-fill text-white text-2xl hover:text-[#E980E7]"
-        aria-label="Instagram"
-      ></i>
-    </div>
-  </body>
+        <!-- Icons -->
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+
+        <title>Frontend Mentor | Huddle landing page</title>
+
+        <!-- Font Setup -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            poppins: ['Poppins', 'sans-serif'],
+                            opensans: ['"Open Sans"', 'sans-serif'],
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+
+    <body
+        class="bg-[url('images/bg-mobile.svg')] md:bg-[url('images/bg-desktop.svg')] bg-no-repeat bg-cover bg-[#674BB1] px-6 py-10 md:px-20"
+    >
+        <!-- Navbar -->
+        <nav class="w-full mb-10">
+            <div class="w-1/2 md:w-[15%]">
+                <img
+                    src="images/logo.svg"
+                    alt="Huddle logo"
+                    class="w-full"
+                />
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main
+            class="flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+            <!-- Left: Image -->
+            <div class="w-full md:w-full sm:w-full max-w-[600px]">
+                <img
+                    src="images/illustration-mockups.svg"
+                    alt="Illustration mockups"
+                    class="w-full"
+                    loading="lazy"
+                />
+            </div>
+
+            <!-- Right: Text -->
+            <div
+                class="w-full md:w-full sm:w-full max-w-[600px] text-white flex flex-col align-start justify-center text-center md:text-left"
+            >
+                <h1
+                    class="text-3xl md:text-4xl font-semibold mb-4 font-poppins leading-snug"
+                >
+                    Build The Community <br />Your Fans Will Love
+                </h1>
+                <p
+                    class="text-base font-normal mb-6 font-opensans leading-relaxed"
+                >
+                    Huddle re-imagines the way we build communities. You have a
+                    voice, but so does your audience. Create connections with
+                    your users as you engage in genuine discussion.
+                </p>
+                <button
+                    class="bg-white text-[#674BB1] px-10 py-2 rounded-full font-semibold hover:bg-[#E980E7] hover:text-white transition duration-200 whitespace-nowrap w-[70%] md:w-auto mx-auto md:mx-0 self-center md:self-start"
+                >
+                    Register
+                </button>
+            </div>
+        </main>
+
+        <!-- Social Icons -->
+        <div
+            class="flex justify-center md:justify-end gap-3 mt-8 mr-0 md:mr-10"
+        >
+            <i
+                class="border border-white size-10 flex items-center justify-center aspect-square rounded-full cursor-pointer transition-colors duration-200 ease-in hover:text-gray-300 text-white text-2xl hover:border-gray-300"
+                aria-label="Facebook"
+            >
+                <span class="ri-facebook-fill"></span>
+            </i>
+            <i
+                class="border border-white size-10 flex items-center justify-center aspect-square rounded-full cursor-pointer transition-colors duration-200 ease-in hover:text-gray-300 text-white text-2xl hover:border-gray-300"
+                aria-label="Twitter"
+            >
+                <span class="ri-twitter-fill"></span>
+            </i>
+            <i
+                class="border border-white size-10 flex items-center justify-center aspect-square rounded-full cursor-pointer transition-colors duration-200 ease-in hover:text-gray-300 text-white text-2xl hover:border-gray-300"
+                aria-label="Instagram"
+            >
+                <span class="ri-instagram-fill"></span
+            ></i>
+        </div>
+    </body>
 </html>
